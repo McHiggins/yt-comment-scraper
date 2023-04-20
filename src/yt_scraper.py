@@ -232,8 +232,6 @@ def channellist_grabber(cfg_api_service_name: str, cfg_api_version: str, cfg_api
                 date_format="%Y-%m-%d %H:%M:%S")
     return data
 
-Hinweis = ""
-# 3 Seiten: Je für alle Videos, für alle User, Filtern nach User/Topic in allen Videos
 
 if __name__ == '__main__':
     channellist_grabber()
