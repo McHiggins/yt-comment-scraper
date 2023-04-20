@@ -22,7 +22,7 @@ do:
 
 ## Usage
 
-1. Get a Google-API-Key and safe it to the config.yaml file.
+1. Get a Google-API-Key and save it to the config.yaml file.
 2. Install all the requirements.txt
 3. Get a video_id or playlist_id and start fetching data via
 the youtubecomment_grabber() or channellist_grabber().
