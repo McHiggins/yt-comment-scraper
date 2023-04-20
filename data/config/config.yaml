@@ -1,0 +1,22 @@
+ytcommentscraper:
+  APIKey: "Enter Your APIKey"
+  datapath: ".\\data\\"
+  videoid: "Enter Your YouTube video ID "
+  playlistid: "Enter Your YouTube playplist ID"
+  debug: "True"
+
+texpreprocessor:
+  languagemodel: ""
+  datapath: ".\\data\\"
+  debug: "True"
+
+languageanalyzer:
+  topicmodel: ""
+  sentimentmodel: ""
+  datapath: ".\\data\\"
+  debug: "True"
+
+dataevaluation:
+  datapath: ".\\data\\"
+  debug: "True"
+
