@@ -18,6 +18,7 @@ the youtubecomment_grabber() or channellist_grabber().
 meta-data to a .csv-file or all the video_ids from a specified 
    playlist.
    
+5. Hallo
 You can use the playlist_id file to get all the single video_ids
 from the playlist and download all comment data for each video.
 
