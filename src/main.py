@@ -1,4 +1,4 @@
-import yt_comment_scraper
+import yt_scraper
 import yaml
 
 
@@ -10,4 +10,7 @@ def configloader(path: str):
 
 
 if __name__ == '__main__':
-    yt_comment_scraper.channellist_grabber()
+    yt_scraper.channellist_grabber(cfg_api_service_name: str, cfg_api_version: str, cfg_api_key: str, playlist_id: str,
+    np_token: str)
+    yt_scraper.youtubecomment_grabber(cfg_api_key: str, cfg_api_service_name: str, cfg_api_version: str, video_id=None,
+                                                                                                                          video_title=None, channel_name=None, video_releasedate=None)
