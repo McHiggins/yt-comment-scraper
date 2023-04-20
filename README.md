@@ -11,9 +11,10 @@ to the retrieved metadata and analyze correlations.
 ## Usage
 
 1. Get a Google-API-Key and safe it to the config.yaml file.
-2. Get a video_id or playlist_id and start fetching data via
+2. Install all the requirements.txt
+3. Get a video_id or playlist_id and start fetching data via
 the youtubecomment_grabber() or channellist_grabber().
-3. This will save you a dataframe with all the comments and it's 
+4. This will save you a dataframe with all the comments and it's 
 meta-data to a .csv-file or all the video_ids from a specified 
    playlist.
    
