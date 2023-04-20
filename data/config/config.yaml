@@ -1,5 +1,7 @@
 ytcommentscraper:
   APIKey: "Enter Your APIKey"
+  api_service_name: "youtube"
+  api_version: "v3"
   datapath: ".\\data\\"
   videoid: "Enter Your YouTube video ID "
   playlistid: "Enter Your YouTube playplist ID"

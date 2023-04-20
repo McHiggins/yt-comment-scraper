@@ -11,7 +11,8 @@ def configloader(path: str):
 
 if __name__ == '__main__':
     cfg = configloader(path="..\\data\\config\\config.yaml")
-    yt_scraper.channellist_grabber(cfg_api_service_name=cfg[""], cfg_api_version=cfg[""], cfg_api_key=cfg[""],
-                                   playlist_id=cfg[""], np_token="")
-    yt_scraper.youtubecomment_grabber(cfg_api_key=cfg[""], cfg_api_service_name=cfg[""], cfg_api_version=cfg[""],
-                                      video_id=cfg[""], video_title=None, channel_name=None, video_releasedate=None)
+    yt_scraper.channellist_grabber(cfg_api_service_name=cfg["api_service_name"], cfg_api_version=cfg["api_version"],
+                                   cfg_api_key=cfg["APIKey"], playlist_id="", np_token="")
+    yt_scraper.youtubecomment_grabber(cfg_api_key=cfg["APIKey"], cfg_api_service_name=cfg["api_service_name"],
+                                      cfg_api_version=cfg["api_version"], video_id="", video_title="",
+                                      channel_name="", video_releasedate="")
