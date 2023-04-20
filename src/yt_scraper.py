@@ -201,6 +201,7 @@ def channellist_grabber(cfg_api_service_name: str, cfg_api_version: str, cfg_api
                         np_token: str):
     """
     This function starts the channellist_videoid_getter() to create a api-request for video_ids from a channel.
+    During the API-Call, the function will check if there are nextPageToken to retrieve more comments.
 
     :param cfg_api_service_name:
     :param cfg_api_key:
