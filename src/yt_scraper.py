@@ -14,7 +14,7 @@ def load_comments(match, video_title, channel_name, video_releasedate):
     :param video_title:
     :param channel_name:
     :param video_releasedate:
-    :return:
+    :return data_list:
     """
     data_list = []
     for item in match["items"]:
@@ -40,6 +40,12 @@ def get_comment_threads(cfg_api_key: str, cfg_api_service_name: str, cfg_api_ver
     """
     This function gets all information to build the youtube api connection and returns one page of comment threads
     if it raises an error the quota is probably exceeded; you can adjust by maxResults
+    :param cfg_api_key:
+    :param cfg_api_service_name:
+    :param cfg_api_version:
+    :param video_id:
+    :param next_page_token:
+    :return results:
     """
     try:
         youtube = build(cfg_api_service_name, cfg_api_version, developerKey=cfg_api_key)
@@ -69,7 +75,7 @@ def youtubecomment_grabber(cfg_api_key: str, cfg_api_service_name: str, cfg_api_
     :param video_title:
     :param channel_name:
     :param video_releasedate:
-    :return:
+    :return dataframe:
     """
     dataframe = pd.DataFrame()
     match = get_comment_threads(cfg_api_key=cfg_api_key, cfg_api_service_name=cfg_api_service_name,
@@ -176,7 +182,7 @@ def channellist_videoid_getter(playlist_id: str, cfg_api_service_name="", cfg_ap
     :param cfg_api_key:
     :param cfg_api_version:
     :param np_token:
-    :return:
+    :return results:
     """
     try:
         youtube = build(cfg_api_service_name, cfg_api_version, developerKey=cfg_api_key)
@@ -196,7 +202,12 @@ def channellist_grabber(cfg_api_service_name: str, cfg_api_version: str, cfg_api
     """
     This function starts the channellist_videoid_getter() to create a api-request for video_ids from a channel.
 
-    :return:
+    :param cfg_api_service_name:
+    :param cfg_api_key:
+    :param cfg_api_version:
+    :param playlist_id:
+    :param np_token:
+    :return data:
     """
     try:
         youtube = build(cfg_api_service_name, cfg_api_version, developerKey=cfg_api_key)
