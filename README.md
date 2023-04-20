@@ -14,7 +14,8 @@ to the retrieved metadata and analyze correlations.
 2. Get a video_id or playlist_id and start fetching data via
 the youtubecomment_grabber() or channellist_grabber().
 3. This will save you a dataframe with all the comments and it's 
-meta-data to a .csv-file or all the video_ids from a specifig playlist.
+meta-data to a .csv-file or all the video_ids from a specified 
+   playlist.
    
 You can use the playlist_id file to get all the single video_ids
 from the playlist and download all comment data for each video.
